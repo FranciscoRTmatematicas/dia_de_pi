@@ -1,0 +1,252 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Maravíllame</title>
+ 
+body {
+
+    font-family: "Comic Sans MS", Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color: #fffbf0;
+
+    color: #444;
+
+}
+ 
+header {
+
+    background-color: #ff8c42;
+
+    color: #fff;
+
+    padding: 1.5rem 0;
+
+    text-align: center;
+
+    border-bottom: 4px solid #ffab6f;
+
+}
+ 
+header h1 {
+
+    margin: 0;
+
+    font-size: 2.5rem;
+
+    text-shadow: 2px 2px #ffa66e;
+
+}
+ 
+/* General navigation styling */
+
+.collapsible-nav {
+
+    background-color: #ffd700;
+
+    text-align: center;
+
+    border-top: 2px solid #ffef85;
+
+    border-bottom: 2px solid #ffef85;
+
+    position: relative; /* For positioning the arrow button */
+
+    overflow: hidden; /* Ensure hidden content does not overflow */
+
+    transition: height 0.3s ease; /* Smooth transition for resizing */
+
+}
+ 
+/* Hidden checkbox for toggling menu */
+
+#nav-toggle {
+
+    display: none; /* Hide the checkbox itself */
+
+}
+ 
+/* Arrow button styling */
+
+.collapsible-nav label {
+
+    display: inline-block;
+
+    position: absolute;
+
+    left: 50%; /* Center below the nav bar */
+
+    transform: translate(-50%, 0);
+
+    background-color: #ff8c42;
+
+    color: white;
+
+    padding: 0.3rem 0.6rem;
+
+    font-size: 1.5rem;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    user-select: none;
+
+    margin-top: 0.5rem;
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+}
+ 
+/* Default arrow direction (collapsed) */
+
+#nav-toggle:not(:checked) + .collapsible-nav label::after {
+
+    content: "▼";
+
+}
+ 
+/* Expanded arrow direction */
+
+#nav-toggle:checked + .collapsible-nav label::after {
+
+    content: "▲";
+
+}
+ 
+/* Button container */
+
+.collapsible-nav ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 0.5rem; /* Space between buttons */
+
+    row-gap: 0.5rem; /* Space between rows */
+
+    height: auto; /* Default height */
+
+    transition: height 0.3s ease; /* Smooth transition for height */
+
+}
+ 
+/* Button styling */
+
+.collapsible-nav ul button {
+
+    background-color: #fff3d4;
+
+    border: 2px solid #ffcc00;
+
+    border-radius: 8px;
+
+    color: #ff4500;
+
+    font-size: 1.1rem;
+
+    font-weight: bold;
+
+    padding: 0.5rem 1rem;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+ 
+.collapsible-nav ul button:hover {
+
+    background-color: #ffe4b5;
+
+    transform: scale(1.1);
+
+}
+ 
+/* Collapsed navigation bar */
+
+#nav-toggle:not(:checked) + .collapsible-nav ul {
+
+    height: 0; /* Collapse height to zero */
+
+    overflow: hidden; /* Hide overflowing buttons */
+
+    visibility: hidden; /* Hide content */
+
+    opacity: 0; /* Fade out */
+
+    padding: 0; /* Remove padding when collapsed */
+
+    transition: height 0.3s ease, visibility 0.3s ease, opacity 0.3s ease;
+
+}
+ 
+/* Expanded navigation bar */
+
+#nav-toggle:checked + .collapsible-nav ul {
+
+    visibility: visible;
+
+    opacity: 1;
+
+    padding: 1rem; /* Restore padding when expanded */
+
+}
+ 
+ 
+main {
+
+    max-width: 80%;
+
+    margin: 2rem auto;
+
+    padding: 2rem;
+
+    background: #fffbe6;
+
+    border-radius: 16px;
+
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+
+    border: 3px dashed #ffcc00;
+
+}
+ 
+footer {
+
+    text-align: center;
+
+    padding: 1.5rem;
+
+    background-color: #ff8c42;
+
+    color: #fff;
+
+    border-top: 4px solid #ffab6f;
+
+    font-size: 1.2rem;
+
+}
+ 
+footer a {
+
+    color: #ffdd93;
+
+    text-decoration: underline;
+
+    font-weight: bold;
+
+}
+ 

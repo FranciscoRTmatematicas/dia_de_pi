@@ -1,252 +1,145 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="styles.css">
-<title>Maravíllame</title>
+<title>Dia de π</title>
  
 body {
-
     font-family: "Comic Sans MS", Arial, sans-serif;
-
     margin: 0;
-
     padding: 0;
-
-    background-color: #fffbf0;
-
-    color: #444;
-
+    background-color: #FFFFFF; /* Blanco */
+    color: #000000; /* Negro */
 }
- 
+
 header {
-
-    background-color: #ff8c42;
-
-    color: #fff;
-
+    background-color: #003366; /* Pantone 7463 */
+    color: #FFFFFF; /* Blanco */
     padding: 1.5rem 0;
-
     text-align: center;
-
-    border-bottom: 4px solid #ffab6f;
-
+    border-bottom: 4px solid #4A89C2; /* Pantone 7688 */
 }
- 
+
 header h1 {
-
     margin: 0;
-
     font-size: 2.5rem;
-
-    text-shadow: 2px 2px #ffa66e;
-
+    text-shadow: 2px 2px #4A89C2; /* Pantone 7688 */
 }
- 
+
 /* General navigation styling */
-
 .collapsible-nav {
-
-    background-color: #ffd700;
-
+    background-color: #003366; /* Pantone 7463 */
     text-align: center;
-
-    border-top: 2px solid #ffef85;
-
-    border-bottom: 2px solid #ffef85;
-
-    position: relative; /* For positioning the arrow button */
-
-    overflow: hidden; /* Ensure hidden content does not overflow */
-
-    transition: height 0.3s ease; /* Smooth transition for resizing */
-
+    border-top: 2px solid #4A89C2; /* Pantone 7688 */
+    border-bottom: 2px solid #4A89C2; /* Pantone 7688 */
+    position: relative;
+    overflow: hidden;
+    transition: height 0.3s ease;
 }
- 
+
 /* Hidden checkbox for toggling menu */
-
 #nav-toggle {
-
-    display: none; /* Hide the checkbox itself */
-
+    display: none;
 }
- 
+
 /* Arrow button styling */
-
 .collapsible-nav label {
-
     display: inline-block;
-
     position: absolute;
-
-    left: 50%; /* Center below the nav bar */
-
+    left: 50%;
     transform: translate(-50%, 0);
-
-    background-color: #ff8c42;
-
-    color: white;
-
+    background-color: #4A89C2; /* Pantone 7688 */
+    color: #FFFFFF; /* Blanco */
     padding: 0.3rem 0.6rem;
-
     font-size: 1.5rem;
-
     border-radius: 50%;
-
     cursor: pointer;
-
     user-select: none;
-
     margin-top: 0.5rem;
-
     transition: transform 0.3s ease, background-color 0.3s ease;
-
 }
- 
+
 /* Default arrow direction (collapsed) */
-
 #nav-toggle:not(:checked) + .collapsible-nav label::after {
-
     content: "▼";
-
 }
- 
+
 /* Expanded arrow direction */
-
 #nav-toggle:checked + .collapsible-nav label::after {
-
     content: "▲";
-
 }
- 
+
 /* Button container */
-
 .collapsible-nav ul {
-
     list-style: none;
-
     padding: 0;
-
     margin: 0;
-
     display: flex;
-
     flex-wrap: wrap;
-
     justify-content: center;
-
-    gap: 0.5rem; /* Space between buttons */
-
-    row-gap: 0.5rem; /* Space between rows */
-
-    height: auto; /* Default height */
-
-    transition: height 0.3s ease; /* Smooth transition for height */
-
+    gap: 0.5rem;
+    row-gap: 0.5rem;
+    height: auto;
+    transition: height 0.3s ease;
 }
- 
+
 /* Button styling */
-
 .collapsible-nav ul button {
-
-    background-color: #fff3d4;
-
-    border: 2px solid #ffcc00;
-
+    background-color: #FFFFFF; /* Blanco */
+    border: 2px solid #003366; /* Pantone 7463 */
     border-radius: 8px;
-
-    color: #ff4500;
-
+    color: #000000; /* Negro */
     font-size: 1.1rem;
-
     font-weight: bold;
-
     padding: 0.5rem 1rem;
-
     cursor: pointer;
-
     transition: background-color 0.3s ease, transform 0.3s ease;
-
 }
- 
+
 .collapsible-nav ul button:hover {
-
-    background-color: #ffe4b5;
-
+    background-color: #4A89C2; /* Pantone 7688 */
     transform: scale(1.1);
-
+    color: #FFFFFF; /* Blanco */
 }
- 
+
 /* Collapsed navigation bar */
-
 #nav-toggle:not(:checked) + .collapsible-nav ul {
-
-    height: 0; /* Collapse height to zero */
-
-    overflow: hidden; /* Hide overflowing buttons */
-
-    visibility: hidden; /* Hide content */
-
-    opacity: 0; /* Fade out */
-
-    padding: 0; /* Remove padding when collapsed */
-
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    padding: 0;
     transition: height 0.3s ease, visibility 0.3s ease, opacity 0.3s ease;
-
 }
- 
+
 /* Expanded navigation bar */
-
 #nav-toggle:checked + .collapsible-nav ul {
-
     visibility: visible;
-
     opacity: 1;
-
-    padding: 1rem; /* Restore padding when expanded */
-
+    padding: 1rem;
 }
- 
- 
+
 main {
-
     max-width: 80%;
-
     margin: 2rem auto;
-
     padding: 2rem;
-
-    background: #fffbe6;
-
+    background: #FFFFFF; /* Blanco */
     border-radius: 16px;
-
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-
-    border: 3px dashed #ffcc00;
-
+    border: 3px dashed #003366; /* Pantone 7463 */
 }
- 
+
 footer {
-
     text-align: center;
-
     padding: 1.5rem;
-
-    background-color: #ff8c42;
-
-    color: #fff;
-
-    border-top: 4px solid #ffab6f;
-
+    background-color: #003366; /* Pantone 7463 */
+    color: #FFFFFF; /* Blanco */
+    border-top: 4px solid #4A89C2; /* Pantone 7688 */
     font-size: 1.2rem;
-
 }
- 
+
 footer a {
-
-    color: #ffdd93;
-
+    color: #4A89C2; /* Pantone 7688 */
     text-decoration: underline;
-
     font-weight: bold;
-
 }
  

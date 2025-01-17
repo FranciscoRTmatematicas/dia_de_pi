@@ -4,33 +4,33 @@
 <title>Dia de π</title>
  
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Comic Sans MS", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFFFFF; /* Blanco */
-    color: #000000; /* Negro */
+    background-color: #003366; /* Pantone 7463 */
+    color: #3A3A3A; /* Negro con C64 M54 Y52 K52 */
 }
 
 header {
     background-color: #003366; /* Pantone 7463 */
-    color: #FFFFFF; /* Blanco */
+    color: #F2F2F2; /* Gris muy claro */
     padding: 1.5rem 0;
     text-align: center;
-    border-bottom: 4px solid #4A89C2; /* Pantone 7688 */
+    border-bottom: 4px solid #F2F2F2; /* Gris muy claro */
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5rem;
-    text-shadow: 2px 2px #4A89C2; /* Pantone 7688 */
+    text-shadow: 2px 2px #F2F2F2; /* Gris muy claro */
 }
 
 /* General navigation styling */
 .collapsible-nav {
     background-color: #003366; /* Pantone 7463 */
     text-align: center;
-    border-top: 2px solid #4A89C2; /* Pantone 7688 */
-    border-bottom: 2px solid #4A89C2; /* Pantone 7688 */
+    border-top: 2px solid #F2F2F2; /* Gris muy claro */
+    border-bottom: 2px solid #F2F2F2; /* Gris muy claro */
     position: relative;
     overflow: hidden;
     transition: height 0.3s ease;
@@ -47,8 +47,8 @@ header h1 {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    background-color: #4A89C2; /* Pantone 7688 */
-    color: #FFFFFF; /* Blanco */
+    background-color: #F2F2F2; /* Gris muy claro */
+    color: #3A3A3A; /* Negro con C64 M54 Y52 K52 */
     padding: 0.3rem 0.6rem;
     font-size: 1.5rem;
     border-radius: 50%;
@@ -84,10 +84,10 @@ header h1 {
 
 /* Button styling */
 .collapsible-nav ul button {
-    background-color: #FFFFFF; /* Blanco */
+    background-color: #F2F2F2; /* Gris muy claro */
     border: 2px solid #003366; /* Pantone 7463 */
     border-radius: 8px;
-    color: #000000; /* Negro */
+    color: #3A3A3A; /* Negro con C64 M54 Y52 K52 */
     font-size: 1.1rem;
     font-weight: bold;
     padding: 0.5rem 1rem;
@@ -96,9 +96,9 @@ header h1 {
 }
 
 .collapsible-nav ul button:hover {
-    background-color: #4A89C2; /* Pantone 7688 */
+    background-color: #3A3A3A; /* Negro con C64 M54 Y52 K52 */
     transform: scale(1.1);
-    color: #FFFFFF; /* Blanco */
+    color: #F2F2F2; /* Gris muy claro */
 }
 
 /* Collapsed navigation bar */
@@ -122,24 +122,24 @@ main {
     max-width: 80%;
     margin: 2rem auto;
     padding: 2rem;
-    background: #FFFFFF; /* Blanco */
+    background: #F2F2F2; /* Gris muy claro */
     border-radius: 16px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
     border: 3px dashed #003366; /* Pantone 7463 */
+    color: #3A3A3A; /* Negro con C64 M54 Y52 K52 */
 }
 
 footer {
     text-align: center;
     padding: 1.5rem;
     background-color: #003366; /* Pantone 7463 */
-    color: #FFFFFF; /* Blanco */
-    border-top: 4px solid #4A89C2; /* Pantone 7688 */
+    color: #F2F2F2; /* Gris muy claro */
+    border-top: 4px solid #F2F2F2; /* Gris muy claro */
     font-size: 1.2rem;
 }
 
 footer a {
-    color: #4A89C2; /* Pantone 7688 */
+    color: #F2F2F2; /* Gris muy claro */
     text-decoration: underline;
     font-weight: bold;
 }
- 
